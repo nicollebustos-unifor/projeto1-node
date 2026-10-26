@@ -33,7 +33,7 @@ app.get("/cadastro/{:nome}", function(req,res){
 
 //NOVA ROTA 1: rota simples (igual a /produtos)
 app.get("/clientes", function(req,res){
-    res.send("<h1>Lista de Clientes!</h1>");
+    res.send("<h1>Lista de Clientes creada!!!!</h1>");
 })
 
 //NOVA ROTA 2: rota com parametro (igual a /consulta)
