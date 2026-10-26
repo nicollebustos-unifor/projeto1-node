@@ -51,6 +51,10 @@ app.get("/fornecedor/{:nome}", function(req,res){
     }
 })
 
+//NOVA ROTA 4: rota sobre a aplicacao
+app.get("/sobre", function(req,res){
+    res.send("<h1>Sobre: aplicacao de Nicolle - versao 2</h1>");
+})
 
 app.listen(process.env.PORT ?? 3000,function(erro){  // cria a aplicação na porta 3000 (ou na porta da plataforma)
     if (erro){
