@@ -56,6 +56,12 @@ app.get("/sobre", function(req,res){
     res.send("<h1>Sobre: aplicacao de Nicolle - versao 2</h1>");
 })
 
+//NOVA ROTA 5: rota contato
+   app.get("/contato", function(req,res){
+       res.send("<h1>Contato: nicolle@exemplo.com</h1>");
+   })
+
+   
 app.listen(process.env.PORT ?? 3000,function(erro){  // cria a aplicação na porta 3000 (ou na porta da plataforma)
     if (erro){
         console.log("Erro ao Iniciar.");
